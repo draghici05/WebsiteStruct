@@ -2,26 +2,83 @@ body {
     margin: 0px;
     height: 100vh;
     background-color: #0C0908;
-    display: grid;
     justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
 }
 
 :root {
     --bg-image: url(cat.jpg);
 }
 
+.card {
+    position: absolute;
+    transition: transform 800ms cubic-bezier(.05,.43,.25,.95);
+}
+
+.container,
+.card {
+    aspect-ratio: 5/7;
+}
+
+.container,
+.photo-card {
+    width: 250px;
+}
+
 .photo-card {
     width: 250px;
     height: 380px;
-    background-color: #202020;
-    border-radius: 5%;
+    border-radius: 15px;
     margin-top: 10px;
-    position: relative;
-    background-image: var(--bg-image);
-    background-size: cover;
+    position: absolute;
+    background-size: cover; 
 }
 
-.photo-card:nth-child(2){
+.photo-card:nth-child(1) {
     background-image: var(--bg-image);
+    transform: translateX(-6%) rotate(-1deg);
 }
+
+.photo-card:nth-child(2) {
+    background-image: url("https://source.unsplash.com/eoqnr8ikwFE");
+    transform: translateX(-4%) rotate(2deg);
+}
+
+.photo-card:nth-child(3) {
+    background-image: url("https://source.unsplash.com/hxn2HjZHyQE");
+    transform: translateX(7%) rotate(3deg);
+}
+
+.photo-card:nth-child(4) {
+    background-image: url("https://source.unsplash.com/RVPfbMI");
+    transform: translateX(-6%) rotate(-4deg);
+}
+
+.photo-card:nth-child(5) {
+    background-image: url("https://source.unsplash.com/7E9qvMOsZEM");
+    transform: translateX(-1%);
+    filter:blur();
+    /*transition: transform 0.4s ease;
+    transform-origin: center center;*/
+}
+
+/*.container:hover .photo-card:nth-child(1) {
+    transform: translate(-70% 15%) rotate(-20deg);
+}
+
+.container:hover .photo-card:nth-child(2) {
+    transform: translate(-50% 5%) rotate(-10deg);
+}
+
+.container:hover .photo-card:nth-child(3) {
+    transform: translate(-20% 5%) rotate(-15deg);
+}
+
+.photo-card:hover .photo-card:nth-child(4) {
+    transform: translate(-65% 15%) rotate(-25deg);
+}
+
+.container:hover .photo-card:nth-child(5) {
+    transform: translate(-75% 15%) rotate(-10deg);
+}*/
