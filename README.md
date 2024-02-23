@@ -1,1 +1,1 @@
-# Photo_slide
+# Website designed in HTML/CSS/JS 
