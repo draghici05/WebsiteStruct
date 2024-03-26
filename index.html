@@ -5,36 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>awesome site</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+<body style="background-color: #272829;">
 
-<body style="background-color:  #272829;">
-
+    <!-- Top nav bar -->
     <nav>
-        <div class="logo">
-            <img src="logo!!.png"></div>
+
+         <a href="index.html" class="logo">
+            <img src="logo2.png" alt="Logo">
+        <a>
 
         <div class="nav-items">
-
-            <a href="/">
+            <a href="/" class="account-page">
                 <i class='bx bx-user'></i> Account</a>
 
-            <a href="/">
-                <i class='bx bx-bell'></i> Notifications</a>
+            <div class="dropdown">
+                <a href="/" class="notifications-bar">
+                    <i class='bx bx-bell'></i> Notifications</a>
 
-            <a href="/">
+                <div class="dropdown-content">
+                    <a href="#">Notification 1</a>
+                    <a href="#">Notification 2</a>
+                    <a href="#">Notification 3</a>
+                    <a href="#">Notification 4</a>
+                    <a href="#">Notification 5</a>
+
+                </div>
+            </div>
+
+            <a href="/favorites.html">
                 <i class='bx bx-heart'></i> Favorites</a>
         </div>
-
-        <div id="cards">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-        </div>
     </nav>
+
+    <!-- Sign up Page -->
+   <div class="form-container">
+    <div id="loginPage" class="login-page">
+        <form>
+            <h2>Log in</h2>
+            <!-- <div class="input-box">
+                <input type="username" required>
+                <label>Username</label>
+            </div> -->
+            <div class="input-box">
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="/"> Forgot Password?</a>
+            </div>
+            <button type="submit">Login</button>
+            <div class="register-link">
+                <p>Don't have an account?
+                     <a href="/">Register</a> 
+                </p>
+            </div>
+        </form>
+    </div>
+   </div>
 
 </body>
 </html>

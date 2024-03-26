@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    align-items: center;
+    height: 1080px;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+
+    height: 80px;
+}
+
