@@ -8,11 +8,12 @@
     });
 });  
 
-function openForm() {
-    document.getElementById("form").classList.toggle("form-show");
-    document.getElementById("form-bg").style.display = "block";
-  }
-  function closeForm() {
-    document.getElementById("form").classList.toggle("form-show");
-    document.getElementById("form-bg").style.display = "none";
-  }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var closeButton = document.querySelector(".close-button");
+    var FormContainer = document.querySelector(".form-container");
+
+    closeButton.addEventListener("click", function() {
+        FormContainer.style.display = "none"; 
+    });
+});
